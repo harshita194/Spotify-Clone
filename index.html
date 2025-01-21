@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="logo"><img class="invert" src="logo.svg" alt=""></div>
+        <ul>
+          <li><img class="invert" src="home.svg" alt="home">Home</li>
+          <li><img class="invert" src="search.svg" alt="search">Search</li>
+        </ul>
+      </div>
+      <div class="library bg-grey rounded m-1 p-1">
+        <div class="heading">
+          <img class="invert" src="playlist.svg" alt="">
+          <h2>
+            Your Library
+          </h2>
+        </div>
+
+        <div class="menu_side">
+          <div class="menu_songs">
+            <li class="songItem">
+              <span>01</span>
+              <img src="images/song1.jpeg" alt="">
+              <h5>Apna Bana Le<br>
+                <div class="subtitle">Arjit Singh</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="1"></i>
+            </li>
+            <li class="songItem">
+              <span>02</span>
+              <img src="images/song2.jpeg" alt="">
+              <h5>Mehrama<br>
+                <div class="subtitle">Pritam</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="2"></i>
+            </li>
+            <li class="songItem">
+              <span>03</span>
+              <img src="images/song3.jpeg" alt="">
+              <h5>Jaan Nisaar<br>
+                <div class="subtitle">Arjit Singh</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="3"></i>
+            </li>
+            <li class="songItem">
+              <span>04</span>
+              <img src="images/song4.jpeg" alt="">
+              <h5>Tere Hawale<br>
+                <div class="subtitle">Pritam</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="4"></i>
+            </li>
+            <li class="songItem">
+              <span>05</span>
+              <img src="images/song5.jpeg" alt="">
+              <h5>Aise Kyu<br>
+                <div class="subtitle">Anurag Saikia</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="5"></i>
+            </li>
+            <li class="songItem">
+              <span>06</span>
+              <img src="images/song6.jpeg" alt="">
+              <h5>Isqh hai<br>
+                <div class="subtitle">Anurag Saikia</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="6"></i>
+            </li>
+            <li class="songItem">
+              <span>07</span>
+              <img src="images/song7.jpeg" alt="">
+              <h5>Teri Ada<br>
+                <div class="subtitle">Mohit Chauhan</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="7"></i>
+            </li>
+            <li class="songItem">
+              <span>08</span>
+              <img src="images/song8.jpeg" alt="">
+              <h5>Rang Lageya<br>
+                <div class="subtitle">Mohit Chauhan</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="8"></i>
+            </li>
+            <li class="songItem">
+              <span>09</span>
+              <img src="images/song9.jpg" alt="">
+              <h5>Kahaan Ho Tum<br>
+                <div class="subtitle">Prateek Kuhad</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="9"></i>
+            </li>
+            <li class="songItem">
+              <span>10</span>
+              <img src="images/song10.jpeg" alt="">
+              <h5>Sahiba<br>
+                <div class="subtitle">Jasleen Royal</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="10"></i>
+            </li>
+            <li class="songItem">
+              <span>11</span>
+              <img src="images/song11.jpeg" alt="">
+              <h5>Lover<br>
+                <div class="subtitle">Taylor Swift</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="11"></i>
+            </li>
+            <li class="songItem">
+              <span>12</span>
+              <img src="images/song12.jpeg" alt="">
+              <h5>Shiddat<br>
+                <div class="subtitle">Manan Bhardwaj</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="12"></i>
+            </li>
+            <li class="songItem">
+              <span>13</span>
+              <img src="images/song13.jpeg" alt="">
+              <h5>Saudebazi<br>
+                <div class="subtitle">Javed Ali</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="13"></i>
+            </li>
+            <li class="songItem">
+              <span>14</span>
+              <img src="images/song14.jpeg" alt="">
+              <h5>Malang Sajna<br>
+                <div class="subtitle">Sachet Tandon</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="14"></i>
+            </li>
+            <li class="songItem">
+              <span>15</span>
+              <img src="images/song15.jpeg" alt="">
+              <h5>Teri Ore<br>
+                <div class="subtitle">Pritam</div>
+              </h5>
+              <i class="bi playlistPlay bi-play-circle" id="15"></i>
+            </li>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div>
+            <a< href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+          </div>
+          <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+          <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="right bg-grey rounded">
+      <div class="header">
+        <div class="nav">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+              stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+              stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="buttons">
+          <button class="signupbtn">Sign up</button>
+          <button class="loginbtn">Log in</button>
+        </div>
+      </div>
+      <div class="spotifyPlaylist">
+        <h1>Spotify Playlist</h1>
+        <div class="cardContainer">
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02b85b4e8fb6ba961aedfde386" alt="">
+            <p>Apna Bana Le</p>
+            <a>Sachin-Jigar</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="images/song5.jpeg" alt="">
+            <p>Ishq Hai</p>
+            <a>Anurag Saikia</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02c60cc14ac9fd0dc9a30d30f3" alt="">
+            <p>Mannat</p>
+            <a>Darshan Raval</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02ab1e3b16de1c7ec009880e97" alt="">
+            <p>O Maahi</p>
+            <a>Pritam</a>
+          </div>
+
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55" alt="">
+            <p>Jo Tum Mere Ho</p>
+            <a>Anuv Jain</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="	https://i.scdn.co/image/ab67616d00001e02b425c9dadc417923e894eb59" alt="">
+            <p>Saudebazi</p>
+            <a>Aakrosh</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b" alt="">
+            <p>Kun Faya Kun</p>
+            <a>A.R. Rahman</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e024a60872ae145776164540a7f" alt="">
+            <p>Heeriye</p>
+            <a>Jasleen Royal</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e0252fe6875028c892308ffc2f7" alt="">
+            <p>Tum Se Hi</p>
+            <a>Pritam</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02afd2bc3f876235be94c0d36d" alt="">
+            <p>Pehli Dafa</p>
+            <a>Atif Aslam</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e0270d1c1cddd8608784f288259" alt="">
+            <p>Is This Love</p>
+            <a>Mohit Chauhan</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02004f83c1be7d66c4677b32a8" alt="">
+            <p>Rait Zara Si</p>
+            <a>A.R. Rahman</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d0000b27375a0429b40af0e83780b58e3" alt="">
+            <p>Suniyan Suniyan</p>
+            <a>Juss</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02c617a7ebd0cfe5bdbb26d262" alt="">
+            <p>Aayi Nai</p>
+            <a>Sachin-Jigar</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d0000b273a9ca2d9f13c1ba201ba7cea9" alt="">
+            <p>Tenu Sang Rakhna</p>
+            <a>Achint</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02d71d2e2ca2f49bd019476930" alt="">
+            <p>Naina Da Kya Kasoor</p>
+            <a>Amit Trivedi</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e029cfaeaa6815c4eb104301249" alt="">
+            <p>Beautiful</p>
+            <a>Amit Trivedi</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d0000b2732e33f85b9e16a0659f3a0539" alt="">
+            <p>Tere Naina</p>
+            <a>Shankar Mahadevan</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02e4be675de3a03b2ad2552c6d" alt="">
+            <p>Malang Sajna</p>
+            <a>Sachet Tandon</a>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="#3be477" />
+                <path d="M16 34V14L32 24L16 34Z" stroke="black" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616d0000b2737eb29e15e05e9b058c5cc81e" alt="">
+            <p>Naina</p>
+            <a>Diljit Dosanjh</a>
+          </div>
+
+
+
+        </div>
+        <div class="playbar">
+          <div class="seekbar">
+
+            <div class="circle">
+
+            </div>
+          </div>
+          <div class="abovebar">
+            <div class="songinfo-container">
+              <img class="song-cover" src="" alt="Album Cover" />
+              <div class="songinfo">
+                <p id="songTitle">Song Title</p>
+                <p id="songArtist">Artist Name</p>
+              </div>
+            </div>
+            <div class="songbuttons">
+              <img id="previous" src="prevsong.svg" alt="">
+              <img id="play" src="play.svg" alt="">
+              <img id="next" src="nextsong.svg" alt="">
+            </div>
+            <div class="songtime">
+              00:00 / 00:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
