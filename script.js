@@ -45,9 +45,9 @@ const playMusicByIndex = (index, pause = false) => {
   currentSong.src = song.file;
   if (!pause) {
     currentSong.play();
-    play.src = "pause.svg";
+    play.src = "images/pause.svg";
   } else {
-    play.src = "play.svg";
+    play.src = "images/play.svg";
   }
   document.querySelector(".song-cover").src = song.cover; 
   document.querySelector(".songinfo").innerHTML = `${song.title}<br>${song.artist}`;
@@ -58,10 +58,10 @@ const playMusicByIndex = (index, pause = false) => {
 play.addEventListener("click", () => {
   if (currentSong.paused) {
     currentSong.play();
-    play.src = "pause.svg";
+    play.src = "images/pause.svg";
   } else {
     currentSong.pause();
-    play.src = "play.svg";
+    play.src = "images/play.svg";
   }
  });
 // Format time helper function
